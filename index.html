@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
  <head>
-       <link rel="shortcut icon" type="image/x-icon" href="logo.ico">
        <title>Junior Web Designers</title>
+       <link rel="shortcut icon" type="image/x-icon" href="logo.ico">
        <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
        <style>
         div.container {
            width: 100%;
@@ -35,51 +36,49 @@
            background-color:  white;
            border:  4px ridge red;
 }
-        nav {
-           float: left;
+       #column-left  { 
+           float: left; 
+           width: 19%;
            border-right:  3px solid red;
-           height:  416px;
-           width:  240px;
+           height:  413px; 
 }
-        nav ul {
-           list-style-type: none;
+       #column-right  { 
+           float: right;
+           width: 19%;
+           border-left:  3px solid red;
+           height:  413px;
 }
-   
-        nav ul a {
-           text-decoration: none;
-           font-size:  18px;
-           margin-left:  20px;
-           color:  red;
-}
-        iframe   {
+       #column-center  { 
+           display: inline-block;
+           width: 60%;
+}    
+       iframe   {
            border:  2px solid blue;
-           margin-left:  190px;
-           margin-top:  6px;
+           margin-top:  4px;
+           margin-left:  70px;
 } 
-        p   {
+       p   {
            border:  1px solid red;
            color:  blue;
            font-size:  27px;
-           margin-left:  48px;
+           margin-left:  49px;
            width:  130px;
            text-align:  center;
-}      
-        #subtitle1  {
-           font-size:  23px;
-           color:  blue;
-           margin-left:  30px;
-}
-        #subtitle2  {
-           font-size:  23px;
-           color:  blue;
-           margin-left:  44px;
-}
-       nav a  {
-           font-size:  18px;
+           font-weight:  bold;
+}    
+       a   {
            text-decoration:  none;
            color:  red;
-           margin-left:  45px;
-}        
+           font-family: 'Special Elite', cursive;
+           font-size:  18px;
+           font-weight:  bold;
+}          
+       ul {
+           list-style-type: none;
+}
+       li {
+           margin-left:  20px;
+}
        </style>
  </head>
  <body>
@@ -95,21 +94,30 @@
                     <img id="logo" src="https://docs.google.com/drawings/d/1QKiFZjmaV50KUIEiboE55tZ3RgYiGVQayXe64ZC4nJQ/pub?w=120&amp;h=120">
               </div>
             </header>
-            <nav><br>
-              <p>Resources</p>
-              <a href="https://toddboy.github.io/junior-web-designers-sheet/" target="_blank">HTML Cheat Sheet</a></li>
+            <div id="column-left">
+              <p>Tutorials</p>              
               <ul>
-                <li id="subtitle1"><u>Tutorials</u></li>
                 <li><a href="https://www.w3schools.com/" target="_blank">w3schools</a></li>
                 <li><a href="https://www.khanacademy.org/" target="_blank">Khan Academy</a></li>
                 <li><a href="https://www.codecademy.com/" target="_blank">Codecademy</a></li>
-                <li><a href="http://html.com/" target="_blank">HTML.com</a></li><br>
-                <li id="subtitle2"><u>Tools</u></li>
+                <li><a href="http://html.com/" target="_blank">HTML.com</a></li>
+                <li><a href="https://www.tutorialspoint.com/html/" target="_blank">Tutorials Point</a></li>
+                <li><a href="http://www.echoecho.com/html.htm" target="_blank">EchoEcho.com</a></li>
+                <li><a href="https://www.quackit.com/html/tutorial/" target="_blank">Quackit</a></li>                
+              </ul>
+            </div>
+            <div id="column-center">
+              <iframe src="https://docs.google.com/presentation/d/1jN1DiEcZeYoxuz9smFK_axrf_2sh0sGmJXgz9tGo3yM/embed?start=false&loop=false&delayms=60000" frameborder="0" width="700" height="400" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>   
+            </div>
+            <div id="column-right">
+               <p>Tools</p>
+               <ul>
+                <li><a href="#">HTML Cheat Sheet</a></li>
                 <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank">CSS Reference</a></li>
                 <li><a href="https://fonts.google.com/" target="_blank">Google Fonts</a></li>
-              </ul>
-            </nav>
-            <iframe src="https://docs.google.com/presentation/d/1jN1DiEcZeYoxuz9smFK_axrf_2sh0sGmJXgz9tGo3yM/embed?start=false&loop=false&delayms=60000" frameborder="0" width="700" height="400" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>          
+                <li><a href="http://owumaro.github.io/text-stroke-generator/" target="_blank">CSS Text Stroke Generator</a></li> 
+               </ul>
+            </div>      
            <footer>Roper Mountain Technology Summer Camp </footer>      
         </div>       
  </body>
